@@ -27,6 +27,7 @@ nano nginx.conf
 
 # build docker image
 # change or remove tag if you want to
+# add --no-cache to the arguments if gulag updated or something
 docker build . -t gulag:3.2.4
 
 # then create a docker container with the image (idk how to do it and i'm too lazy to google so figure it out yourself i guess)
