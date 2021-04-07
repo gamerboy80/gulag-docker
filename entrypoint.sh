@@ -1,4 +1,7 @@
 #!/bin/bash
 service nginx start
-mv default.jpg .data/avatars
+if [ -e default.jpg ]
+then
+	mv default.jpg .data/avatars
+fi
 ./main.py
