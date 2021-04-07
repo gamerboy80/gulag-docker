@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update
-RUN apt-get install -y software-properties-common git wget mysql-server nginx build-essential
+RUN apt-get install -y software-properties-common git wget nginx build-essential
 RUN add-apt-repository ppa:deadsnakes/ppa -y
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y python3.9 python3.9-dev python3.9-distutils
 RUN mkdir /gulag
