@@ -13,6 +13,7 @@ WORKDIR /gulag/oppai-ng
 RUN ./build
 WORKDIR /gulag
 RUN python3.9 -m pip install -r ext/requirements.txt
+#RUN apt-get remove -y --autoremove wget build-essential software-properties-common
 COPY ./config.py /gulag/config.py
 COPY ./nginx.conf /etc/nginx/sites-enabled/gulag.conf
 COPY ./certs /gulag/certs
