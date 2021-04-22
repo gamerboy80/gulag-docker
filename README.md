@@ -1,5 +1,5 @@
 # gulag-docker
-dockerfile for https://github.com/cmyui/gulag
+dockerfile for [gulag](https://github.com/cmyui/gulag)
 # setup instructions
 ```bash
 mkdir certs
