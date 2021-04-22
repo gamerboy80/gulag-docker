@@ -31,5 +31,5 @@ nano nginx.conf
 docker build . -t gulag:3.2.4
 
 # then create a docker container with the image
-docker run -d -p 80:80 -p 443:443 gulag:3.2.5
+docker run -d -p 80:80 -p 443:443 gulag:3.2.6
 ```
